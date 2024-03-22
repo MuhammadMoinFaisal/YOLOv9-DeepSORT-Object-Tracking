@@ -37,32 +37,22 @@ https://drive.google.com/drive/folders/1kna8eWGrSfzaR6DtNJ8_GchGgPMv3VC8?usp=sha
 gdown "https://drive.google.com/uc?id=115RBSjNQ_1zjvKFRsQK2zE8v8BIRrpdy&confirm=t"
 gdown "https://drive.google.com/uc?id=1rjBn8Fl1E_9d0EMVtL24S9aNQOJAveR5&confirm=t"
 ```
+# for detection only
+python detect.py --weights yolov7.pt --source "your video.mp4"
 
-- Run the code with mentioned command below.
+# for detection and tracking
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4"
 
-- For yolov8 object detection + Tracking
-```
-python predict.py model=yolov8l.pt source="test3.mp4" show=True
-```
-- For yolov8 object detection + Tracking + Vehicle Counting
-- Download the updated predict.py file from the Google Drive and place it into ultralytics/yolo/v8/detect folder 
-- Google Drive Link
-```
-https://drive.google.com/drive/folders/1awlzTGHBBAn_2pKCkLFADMd1EN_rJETW?usp=sharing
-```
-- For yolov8 object detection + Tracking + Vehicle Counting
-```
-python predict.py model=yolov8l.pt source="test3.mp4" show=True
-```
+# for WebCam
+python detect_and_track.py --weights yolov7.pt --source 0
 
-### RESULTS
+# for External Camera
+python detect_and_track.py --weights yolov7.pt --source 1
 
-#### Vehicles Detection, Tracking and Counting 
-![](./figure/figure1.png)
+# For LiveStream (Ip Stream URL Format i.e "rtsp://username:pass@ipaddress:portno/video/video.amp")
+python detect_and_track.py --source "your IP Camera Stream URL" --device 0
 
-#### Vehicles Detection, Tracking and Counting
 
-![](./figure/figure3.png)
 
 ### Watch the Complete Step by Step Explanation
 
