@@ -37,21 +37,33 @@ https://drive.google.com/drive/folders/1kna8eWGrSfzaR6DtNJ8_GchGgPMv3VC8?usp=sha
 gdown "https://drive.google.com/uc?id=115RBSjNQ_1zjvKFRsQK2zE8v8BIRrpdy&confirm=t"
 gdown "https://drive.google.com/uc?id=1rjBn8Fl1E_9d0EMVtL24S9aNQOJAveR5&confirm=t"
 ```
+```
 # for detection only
 python detect.py --weights yolov7.pt --source "your video.mp4"
 
-# for detection and tracking
+#if you want to change source file
 python detect_and_track.py --weights yolov7.pt --source "your video.mp4"
 
-# for WebCam
+#for WebCam
 python detect_and_track.py --weights yolov7.pt --source 0
 
-# for External Camera
+#for External Camera
 python detect_and_track.py --weights yolov7.pt --source 1
 
-# For LiveStream (Ip Stream URL Format i.e "rtsp://username:pass@ipaddress:portno/video/video.amp")
+#For LiveStream (Ip Stream URL Format i.e "rtsp://username:pass@ipaddress:portno/video/video.amp")
 python detect_and_track.py --source "your IP Camera Stream URL" --device 0
 
+#for specific class (person)
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --classes 0
+
+#for colored tracks 
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --colored-trk
+
+#for saving tracks centroid, track id and bbox coordinates
+python detect_and_track.py --weights yolov7.pt --source "your video.mp4" --save-txt --save-bbox-dim
+```
+
+- Output file will be created in the ```working-dir/runs/detect/obj-tracking``` with original filename
 
 
 ### Watch the Complete Step by Step Explanation
