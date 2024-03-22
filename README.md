@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 - Download the pre-trained YOLOv9 model weights
 ```
-[yolov9](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c.pt)
+[`yolov9`](https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-c.pt)
 ```
 - Downloading the DeepSORT Files From The Google Drive 
 ```
