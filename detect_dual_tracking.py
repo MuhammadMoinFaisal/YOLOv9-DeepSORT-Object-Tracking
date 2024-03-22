@@ -111,7 +111,7 @@ def draw_boxes(frame, bbox_xyxy, draw_trails, identities=None, categories=None, 
                 if data_deque[id][i - 1] is None or data_deque[id][1] is None:
                     continue
                 #generate dynamic thickness of trails
-                thickness = int(np.sqrt(64 / float(i+1))*1.5)
+                thickness = int(np.sqrt(64 / float(i+i))*1.5)
                 #draw trails
                 cv2.line(frame, data_deque[id][i - 1], data_deque[id][1], color, thickness)
     return frame
