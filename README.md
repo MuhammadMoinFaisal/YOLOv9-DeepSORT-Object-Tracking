@@ -1,6 +1,11 @@
 <H1 align="center">
 YOLOv9 Object Detection with DeepSORT Tracking(ID + Trails) </H1>
 
+### New Features
+- Added Label for Every Track
+- Code can run on Both (CPU & GPU)
+- Video/WebCam/External Camera/IP Stream Supported
+
 ## Ready to Use Google Colab
 [`Google Colab File`](https://colab.research.google.com/drive/1IivrmAtnhpQ1PSmWsp-G6EnqsUOol9v8?usp=sharing)
 
@@ -8,18 +13,16 @@ YOLOv9 Object Detection with DeepSORT Tracking(ID + Trails) </H1>
 
 - Clone the repository
 ```
-git clone https://github.com/MuhammadMoinFaisal/YOLOv8-DeepSORT-Object-Tracking.git
+git clone https://github.com/MuhammadMoinFaisal/YOLOv9-DeepSORT-Object-Tracking.git
 ```
 - Goto the cloned folder.
 ```
-cd YOLOv8-DeepSORT-Object-Tracking
+cd YOLOv9-DeepSORT-Object-Tracking
 ```
-- Install the dependecies
+- Install requirements with mentioned command below.
 ```
-pip install -e '.[dev]'
-
+pip install -r requirements.txt
 ```
-
 - Setting the Directory.
 ```
 cd ultralytics/yolo/v8/detect
