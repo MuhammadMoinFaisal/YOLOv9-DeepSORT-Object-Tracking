@@ -4,14 +4,6 @@ YOLOv9 Object Detection with DeepSORT Tracking(ID + Trails) </H1>
 ## Ready to Use Google Colab
 [`Google Colab File`](https://colab.research.google.com/drive/1IivrmAtnhpQ1PSmWsp-G6EnqsUOol9v8?usp=sharing)
 
-## Object Detection and Tracking (ID + Trails)  using YOLOv8 on Custom Data
-## Google Colab File Link (A Single Click Solution)
-[`Google Colab File`](https://colab.research.google.com/drive/1dEpI2k3m1i0vbvB4bNqPRQUO0gSBTz25?usp=sharing)
-
-## YOLOv8 Segmentation with DeepSORT Object Tracking
-
-[`Github Repo Link`](https://github.com/MuhammadMoinFaisal/YOLOv8_Segmentation_DeepSORT_Object_Tracking.git)
-
 ## Steps to run Code
 
 - Clone the repository
