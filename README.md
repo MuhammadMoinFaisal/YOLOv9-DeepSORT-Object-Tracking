@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 - Downloading the DeepSORT Files From The Google Drive 
 ```
-https://drive.google.com/drive/folders/1kna8eWGrSfzaR6DtNJ8_GchGgPMv3VC8?usp=sharing
+gdown "https://drive.google.com/uc?id=11ZSZcG-bcbueXZC3rN08CM0qqX3eiHxf&confirm=t"
 ```
 - After downloading the DeepSORT Zip file from the drive, unzip it. 
 
